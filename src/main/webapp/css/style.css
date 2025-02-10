@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+h1{font-size: 3.3rem;}
+h2{font-size: 2.6rem;}
+p{font-size: 1.1rem;}
+h3{font-size: 1.8rem;}
+.logo img{
+    display: none;
+}
+/*
+header{
+    background-color: rgb(244, 245, 245);
+    font-size: 1.2em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+*/
+.container a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img{
+    margin-right: 20px;
+}
+
+.logo{
+    color: brown;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+/*
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+nav a{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+}
+
+nav a:hover{
+    color: brown;
+}
+
+*/
+#hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image:
+        linear-gradient(0deg, rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),url("../Images/fondo-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.button-platos{
+    font-size: 0.8rem;
+    padding: 8px 30px;
+    border-radius: 2px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: rgb(32, 3, 3);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*
+button:hover{
+    background-color: rgb(18, 2, 2);
+}
+
+*/
+#about .container{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#about h2{
+    text-align: center;
+}
+
+#menus{
+    background-color: rgb(30, 30, 30);
+}
+
+#menus .containers{
+    text-align: center;
+    color: white;
+    padding: 100px 80px;
+}
+
+.platos p{
+    display: none;
+}
+
+
+.carta:first-child{
+    background-image: 
+        linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../Images/saludable.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/Económico.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/masPedidos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/carta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.platos .carta:hover{
+    background-color: #1b1b32;
+    color: white;
+}
+
+#lugar{
+    padding: 20px;
+    align-items: center;
+}
+footer{
+    padding-top: 20px;
+    background-color: rgb(30, 30, 30);
+}
+footer p{
+    color: rgb(100,100,100);
+    justify-content: end;
+    font-size: 0.8rem;
+}
+footer .final{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+footer .group{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.group h2{
+    padding-right: 20px;
+}
+
+.group a{
+    padding: 20px
+}
+
+.help-block{
+    color: red;
+}
+
+@media screen and (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .logo img{
+        display: block;
+    }
+    /*
+    nav a{
+        padding-top: 10px;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10px;
+    }
+    */
+    .platos{
+        display: flex;
+        flex-direction: row;
+    }
+    .platos p{
+        display: block;
+    }
+    .platos .carta{
+        padding: 15px;
+        margin: 5px;
+        background-size: 100% 120px;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        background-color: rgb(18, 13, 13);
+        box-shadow: 2px 2px 15px rgba(0,0,0);
+    }
+    .carta p{
+        padding-top: 30px;
+    }
+    iframe{
+        width: 90%px;
+        min-height: 500px;
+    }
+    #menus{
+        min-height: 100vh;
+    }
+    #menus .platos{
+        padding-top: 10px;
+    }
+    #lugar{
+        padding: 50px;
+    }
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn-default:active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
