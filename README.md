@@ -24,9 +24,11 @@ Se presenta el desarrollo de un proyecto simple sobre una tienda online para ven
 
 
 ## Tecnologías utilizadas
+- Java
 - javascript
-- html 5
+- html5
 - css
+- MySQL
 
 ## Autor
 
